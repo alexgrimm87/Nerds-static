@@ -1003,3 +1003,122 @@ margin-right: 0;
 .switch a:first-child:active {
   box-shadow: none;
 }
+
+/*Обратная связь*/
+
+.feedback-popup{
+    display: none;
+    position: absolute;
+    bottom: -970px;
+    left: 50%;
+    width: 460px;
+    min-height: 315px;
+    padding: 50px 85px;
+    margin-left: -315px;
+    background: #ffffff;
+    text-align: left;
+    font-size: 0;
+    box-shadow: 0 0 50px 0 #000000;
+}
+
+.feedback-popup span{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.feedback-form .left-column,
+.feedback-form .right-column{
+    display: inline-block;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea.text-fild{
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 205px;
+    height: 33px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+}
+
+.feedback-form input[type="text"]:hover,
+.feedback-form input[type="email"]:hover,
+.feedback-form textarea.text-fild:hover{
+    border: 2px solid #a2a9ac;
+}
+
+.feedback-form textarea.text-fild{
+    width: 455px;
+    height: 110px;  
+}
+
+.feedback-form .left-column{
+    margin-right: 18px;
+    margin-bottom: 20px;
+}
+
+::-moz-placeholder{
+    padding-top: 7px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+::-webkit-input-placeholder{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.feedback-form .send,
+.feedback-form .cancel{
+    display: inline-block;
+    margin-top: 50px;
+    width: 220px;
+    height: 38px;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-form .send{
+    margin-right: 20px;
+    background: #fb565a;
+    color: #ffffff;
+    border: none;
+}
+
+.feedback-form .send:hover{
+    background: #d6494d;
+}
+
+.feedback-form .send:active{
+    background: #b63538;
+    color: #cc8283;
+}
+
+.feedback-form .cancel{
+    line-height: 38px;
+    background: #f1f1f1;
+}
+
+.feedback-form .cancel:hover{
+    background: #e5e5e5;
+}
+
+.feedback-form .cancel:active{
+    background: #d5d5d5;
+    color: #a9a9a9;
+    box-shadow: inset 0 3px 0 0 #b5b5b5;
+}

@@ -131,6 +131,30 @@
 				<a href="#">НАПИШИТЕ НАМ</a>
 			</div>
 		</div>
+    
+    <!-- Обратная связь -->
+    <div class="feedback-popup">
+        <form class="feedback-form" action="/auth" method="post">
+            <div class="left-column">
+                <label>
+                    <span>Ваше имя:</span><br>
+                    <input class="name-fild" type="text" name="login" placeholder="Представьтесь, пожалуйста">
+                </label>
+            </div>
+            <div class="right-column">
+                <label>
+                    <span>Ваш e-mail:</span><br>
+                    <input class="email-fild" type="email" name="password" placeholder="Для отправки ответа">
+                </label>
+            </div>
+            <label>
+                <span>Текст письма:</span>
+                <textarea rows="5" class="text-fild" name="login" placeholder="В свободной форме" > </textarea>
+            </label>
+            <input class="send" type="submit" name="send">
+            <a class="cancel" href="#">Отмена</a>
+        </form>
+    </div>
 		
 		<div class="footer-wrap">
 			<div class="footer clearfix">
