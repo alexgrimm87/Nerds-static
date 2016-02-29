@@ -139,9 +139,33 @@
 				<h3>NЁRDS <span>DESIGN STUDIO</span></h3>
 				<p>350000, Краснодар,<br>ул. Головатого, 100</p>
 				<p>тел. +7 (861) 275-75-75</p>
-				<a href="#">НАПИШИТЕ НАМ</a>
+				<a class="feedback" href="#">НАПИШИТЕ НАМ</a>
 			</div>
 		</div>
+
+  <!-- Обратная связь -->
+    <div class="feedback-popup">
+        <form class="feedback-form" action="/auth" method="post">
+            <div class="left-column">
+                <label>
+                    <span>Ваше имя:</span><br>
+                    <input class="name-fild" type="text" name="login" placeholder="Представьтесь, пожалуйста" required>
+                </label>
+            </div>
+            <div class="right-column">
+                <label>
+                    <span>Ваш e-mail:</span><br>
+                    <input class="email-fild" type="email" name="password" placeholder="Для отправки ответа" required>
+                </label>
+            </div>
+            <label>
+                <span>Текст письма:</span>
+                <textarea rows="5" class="text-fild" name="login" placeholder="В свободной форме" > </textarea>
+            </label>
+            <input class="send" type="submit" name="send">
+            <a class="cancel" href="#">Отмена</a>
+        </form>
+    </div>
 
 		<div class="footer-wrap">
 			<div class="footer clearfix">
@@ -156,5 +180,6 @@
 				</div>
 			</div>
 		</div>
+    <script src="js/script.js"></script>
 	</body>
 </html>
